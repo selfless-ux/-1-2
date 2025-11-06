@@ -1,0 +1,75 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f0f0f0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+}
+
+.slider-container {
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 8px 16px rgba(0,0,0,0.3);
+    text-align: center;
+    max-width: 600px;
+}
+
+.slider {
+    width: 100%;
+    overflow: hidden;
+    border: 2px solid #ccc;
+    border-radius: 10px;
+    margin-bottom: 15px;
+}
+
+.slider img {
+    width: 100%;
+    height: auto;
+    border-radius: 8px;
+    opacity: 0;
+    transition: opacity 0.8s ease-in-out;
+}
+
+.slider img.show {
+    opacity: 1;
+}
+
+.controls {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.controls button {
+    background-color: #007bff;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+.controls button:hover {
+    background-color: #0056b3;
+}
+
+#counter {
+    font-weight: bold;
+}
+.controls {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 10px; /* отступ сверху */
+}
+.slider img.show {
+    opacity: 1;
+    box-shadow: 0 4px 15px rgba(0,0,0,0.4);
+}
+.controls button:hover {
+    background-color: #003d80;
+}
